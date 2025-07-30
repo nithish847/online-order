@@ -11,7 +11,7 @@ const AdminContactMessages = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/contact/admin/messages", {
+        const res = await axios.get("https://online-order-b.onrender.com/api/v1/contact/admin/messages", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -33,7 +33,7 @@ const AdminContactMessages = () => {
   const updateStatus = async (id, newStatus) => {
     try {
       const res = await axios.patch(
-        `http://localhost:3000/api/v1/contact/admin/messages/${id}`,
+        `https://online-order-b.onrender.com/api/v1/contact/admin/messages/${id}`,
         { status: newStatus },
         { headers: { Authorization: `Bearer ${token}` } }
       );
