@@ -41,7 +41,7 @@ const AddProduct = () => {
 
     try {
       const res = await axios.post(
-       "https://online-order-b.onrender.com/api/v1/products"
+       "https://online-order-b.onrender.com/api/v1/products",
         product,
         { withCredentials: true }
       );
