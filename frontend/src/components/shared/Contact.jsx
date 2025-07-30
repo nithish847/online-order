@@ -47,7 +47,7 @@ const Contact = () => {
       const token = localStorage.getItem("token"); // if your backend requires auth token
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/contact", // Replace with your actual backend endpoint
+        "https://online-order-b.onrender.com/api/v1/contact", // Replace with your actual backend endpoint
         formData,
         {
           headers: {
