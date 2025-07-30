@@ -18,7 +18,7 @@ const PlaceOrder = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/v1/products/${id}`);
+        const res = await axios.get(`https://online-order-b.onrender.com/api/v1/products/${id}`);
         if (res.data.success) {
           setProduct(res.data.product);
         } else {
@@ -56,7 +56,7 @@ const PlaceOrder = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/v1/orders",
+        "https://online-order-b.onrender.com/api/v1/orders",
         orderData,
         {
           headers: {
