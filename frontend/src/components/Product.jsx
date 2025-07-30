@@ -21,7 +21,7 @@ const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/allproducts");
+        const res = await axios.get("https://online-order-b.onrender.com/api/v1/allproducts");
         if (res.data.success) {
           setProducts(res.data.products);
         }
