@@ -19,7 +19,7 @@ const OrderedProducts = () => {
 
     const fetchOrderedProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/orders/my", {
+        const res = await axios.get("https://online-order-b.onrender.com/api/v1/orders/my", {
           headers: { Authorization: `Bearer ${token}` },
           withCredentials: true,
         });
@@ -51,7 +51,7 @@ const OrderedProducts = () => {
 
     try {
       setCancelingId(orderId);
-      const res = await axios.delete(`http://localhost:3000/api/v1/orders/${orderId}`, {
+      const res = await axios.delete(`https://online-order-b.onrender.com/api/v1/orders/${orderId}`, {
         headers: { Authorization: `Bearer ${token}` },
         withCredentials: true,
       });
