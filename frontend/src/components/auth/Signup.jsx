@@ -35,7 +35,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/v1/users/register',
+        'https://online-order-b.onrender.com/api/v1/users/register',
         {
           fullname: input.fullname,
           email: input.email,
