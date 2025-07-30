@@ -19,7 +19,7 @@ const Orders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/v1/orders", {
+      const response = await axios.get("https://online-order-b.onrender.com/api/v1/orders", {
         withCredentials: true,
       });
 
@@ -45,7 +45,7 @@ const Orders = () => {
       );
 
       const response = await axios.put(
-        `http://localhost:3000/api/v1/orders/${orderId}/status`,
+        `https://online-order-b.onrender.com/api/v1/orders/${orderId}/status`,
         { status: newStatus },
         { withCredentials: true }
       );
