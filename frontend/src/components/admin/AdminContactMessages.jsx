@@ -72,7 +72,7 @@ const AdminContactMessages = () => {
     setRefreshing(true);
     const fetchMessages = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/v1/contact/admin/messages", {
+        const res = await axios.get("https://online-order-b.onrender.com/api/v1/contact/admin/messages", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
